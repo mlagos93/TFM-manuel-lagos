@@ -11,8 +11,13 @@ Requisitos previos:
 Los pasos a seguir para ejecutar la aplicación son:
 
 $ roscore   (Ordenador)
+
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch (TurtleBot3)
+
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/nombre-mapa.yaml. (Ordenador)
+
 $ roslaunch detec_usuario_filtro detec_usuario_filtro.launch (Ordenador)
+
 $ roslaunch detec_usuario detec_usuario.launch (Ordenador)
+
 $ roslaunch asistente_usuarios iniciar_ejercicio.launch (Ordenador)
