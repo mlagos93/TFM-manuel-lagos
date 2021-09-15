@@ -1,0 +1,3 @@
+<launch>
+    <node name="detec_usuario_node" pkg="detec_usuario" type="detec_usuario" output="screen"/>
+</launch>

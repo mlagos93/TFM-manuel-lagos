@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+import rospy
+
+from detec_usuario import detec_usuario_code
+
+def inicia_nodo():
+    try:
+        rospy.init_node("detec_usuario_node")
+        detecusuario = detec_usuario_code.detecusuario()
+        detecusuario.ini_detec()
+
+    except rospy.ROSInterruptException:
+        rospy.logerr("O presionaste CTRL+C o algo salio mal...")
+
+
+if __name__ == "__main__":
+    inicia_nodo()
